@@ -28,7 +28,7 @@ public class SpringDemo1 {
 	 */
 	public void demo2(){
 		// 创建Spring的工厂
-		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("D:\\JavaProject\\Spring_Demo\\src\\applicationContext.xml");
 		UserDAO userDAO = (UserDAO) applicationContext.getBean("userDAO");
 		userDAO.save();
 	}
